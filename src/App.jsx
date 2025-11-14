@@ -1,14 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Experiences from "./sections/Experiences";
+import Contact from "./sections/Contact";
+import Footer from './sections/Footer';
 
-function App() {
+const App = () => {
   return (
-     <h1 className='text-red-500 text-4xl font-bold'>
-      Suraj Chhabra
-    </h1>
+    <div className="container mx-auto max-w-7xl">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Experiences />
+      <Contact />
+      <Footer/>
+    </div>
   );
-}
+};
 
-export default App
+export default App;
